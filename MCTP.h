@@ -17,25 +17,25 @@
 
 typedef struct
 {
-    int     UDPSocket[MAX_MCTP_LAN_CHANNELS];
-    int     TCPSocket[MAX_MCTP_LAN_CHANNELS];
-    int     LANIFcheckFlag[MAX_MCTP_LAN_CHANNELS];
+	int     UDPSocket[MAX_MCTP_LAN_CHANNELS];
+	int     TCPSocket[MAX_MCTP_LAN_CHANNELS];
+	int     LANIFcheckFlag[MAX_MCTP_LAN_CHANNELS];
 }LANSocket_T;
 
 typedef struct
 {
-    char ifname[MAX_ETH_NAME];
-    unsigned char Enabled;
-    unsigned char Ethindex;
-    unsigned char Up_Status;
+	char ifname[MAX_ETH_NAME];
+	unsigned char Enabled;
+	unsigned char Ethindex;
+	unsigned char Up_Status;
 
 }LANIfc_t;
 
 typedef struct
 {
-    unsigned char   TimeToLive;
-    unsigned char   IpHeaderFlags;
-    unsigned char  TypeOfService;
+	unsigned char   TimeToLive;
+	unsigned char   IpHeaderFlags;
+	unsigned char  TypeOfService;
 
 }Ipv4HdrParam_t;
 
@@ -43,18 +43,18 @@ typedef struct
 
 typedef struct
 {
-    int  Socket;
-    unsigned char   Valid;
-    time_t  Time;
-    unsigned char  IsLoopBackSocket;
-    unsigned char  IsFixedSocket;
+	int  Socket;
+	unsigned char   Valid;
+	time_t  Time;
+	unsigned char  IsLoopBackSocket;
+	unsigned char  IsFixedSocket;
 }SocketTbl_t;
 
 
 typedef struct
 {
-  unsigned char IPAddr[4];  //IPV4 address
-  unsigned char Data[MSG_SIZE]; // Data
+	unsigned char IPAddr[4];  //IPV4 address
+	unsigned char Data[MSG_SIZE]; // Data
 
 }MsgPkt_t;
 
