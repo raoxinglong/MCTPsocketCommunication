@@ -58,4 +58,6 @@ typedef struct
 
 }MsgPkt_t;
 
+// OEM define data struct
+
 #endif
